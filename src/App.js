@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PropsChildren from "./components/PropsChildren"
+import ConditionalRendering from "./components/ConditionalRendering"
+import ClassBased from "./components/ClassBased"
+import UpdateArray from "./components/UpdateArray"
+import ObjectUpdate from './components/ObjectUpdate'
+import UseMemoHook from './components/UseMemoHook'
+import UseReducer from './components/UseReducer'
+import Test1 from './components/Test1'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <Test1/> */}
+      {/* <UseReducer/> */}
+       <UseMemoHook/>
+      {/*
+      <ObjectUpdate/>
+      <UpdateArray/>
+      <PropsChildren name="Mohsin" age="31">
+        <p>Hello this should be a child</p>
+      </PropsChildren>
+      <ConditionalRendering/>
+      <ClassBased/> */}
+    </>
+      )
 }
 
 export default App;
